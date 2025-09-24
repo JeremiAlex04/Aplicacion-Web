@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Floreria Rosmery</title>
+
+  <!-- Icono de la pestaña -->
+  <link rel="shortcut icon" href="img-logo/logov2-ico-v1.ico">
+
+</head>
+
+<body style="font-family: Poppins;">
+  <div
+    style="background-color: #ffb6c1; color: rgb(0, 0, 0); padding: 10px; display: flex; justify-content: center; align-items: center; text-align: center;">
+    <p style="margin: 0;" class="fw-bold">REGALA EMOCIONES EN CADA PÉTALO</p>
+  </div>
+
+  <!--Logo y menu-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+
+    <div class="container-fluid" style="background-color: #FF6F91;">
+
+      <a class="navbar-brand" href="#">
+        <img src="img-logo/logov2.png" alt="Logo" width="280px" class="d-inline-block align-text-top">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#contactoModal">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#sobreNosotrosModal">Quienes
+              somos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#">Carrito</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 fw-bold" type="search" placeholder="Buscar" aria-label="Search" />
+          <button type="button" class="btn btn-danger fw-bold">Buscar</button>
+        </form><br>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!--Carrusel-->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img-carrusel/foto1.jpg" class="d-block w-100" alt="..."
+          style="object-fit: cover !important; height: 500px;">
+        <div class="carousel-caption d-block">
+          <h5 class="fw-bold" style="text-shadow: 2px 2px 5px #000000;">Armonía floral en tonos suaves y vibrantes</h5>
+          <p class="fw-bold" style="text-shadow: 2px 2px 5px #000000;">Un delicado arreglo de rosas, hortensias y
+            claveles en colores pastel y amarillos intensos, que transmiten frescura, alegría y elegancia natural.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img-carrusel/foto2.jpg" class="d-block w-100" alt="..."
+          style="object-fit: cover !important; height: 500px;">
+        <div class="carousel-caption d-block">
+          <h5 class="fw-bold" style="text-shadow: 2px 2px 5px #000000;">Lirio Blanco</h5>
+          <p class="fw-bold" style="text-shadow: 2px 2px 5px #000000;">Flores blancas de
+            lirio, elegantes y puras, ideales para eventos formales.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img-carrusel/foto3.jpg" class="d-block w-100" alt="..."
+          style="object-fit: cover !important; height: 500px;">
+        <div class="carousel-caption d-block">
+          <h5 class="fw-bold" style="text-shadow: 2px 2px 5px #000000;">Retama</h5>
+          <p class="fw-bold" style="text-shadow: 2px 2px 5px #000000;">Flores amarillas
+            de retama, vivaces y alegres, perfectas para transmitir energía.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <!--tarjeta-->
+  <!-- Sección de Tarjetas -->
+  <div class="container my-5 text-center">
+    <h2 class="text-center fw-bold">Producto Populares</h2><br>
+    <div class="row">
+
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4 mt-5">
+        
+        <div class="card">
+          <img src="img-tarjeta/f1.jpg" class="card-img-top" alt="Imagen 1" height="500px">
+          <div class="card-body" style="font-weight: bold;">
+            <h5 class="card-title fw-bold">Gerberas rosadas</h5>
+            <p class="card-text fw-bold">Precio: S/60</p>
+            <a href="#" class="btn btn-danger fw-bold">Añadir al carrito</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <img src="img-tarjeta/f2.jpg" class="card-img-top" alt="Imagen 2" height="500px">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Rosas blancas y lisianthus lila</h5>
+            <p class="card-text fw-bold">Precio: S/72</p>
+            <a href="#" class="btn btn-danger fw-bold">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <img src="img-tarjeta/f4.jpg" class="card-img-top" alt="Imagen 3" height="500px">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Tulipanes rojos</h5>
+            <p class="card-text fw-bold">Precio: S/85</p>
+            <a href="#" class="btn btn-danger fw-bold">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 4 -->
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <img src="img-tarjeta/f6.jpg" class="card-img-top" alt="Imagen 3" height="500px">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Rosas naranjas y tulipanes blancos</h5>
+            <p class="card-text fw-bold">Precio: S/85</p>
+            <a href="#" class="btn btn-danger fw-bold">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 5 -->
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <img src="img-tarjeta/f8.jpg" class="card-img-top" alt="Imagen 3" height="500px">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Ramo de tulipanes rosados</h5>
+            <p class="card-text fw-bold">Precio: S/105</p>
+            <a href="#" class="btn btn-danger fw-bold">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Tarjeta 6 -->
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <img src="img-tarjeta/f10.jpg" class="card-img-top" alt="Imagen 3" height="500px">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Flor hellebore verde y blanca</h5>
+            <p class="card-text fw-bold">Precio: S/90</p>
+            <a href="#" class="btn btn-danger fw-bold">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- MODAL SOBRE NOSOTROS -->
+  <div class="modal fade" id="sobreNosotrosModal" tabindex="-1" aria-labelledby="sobreNosotrosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 15px;">
+
+        <!-- Encabezado -->
+        <div class="modal-header" style="background-color: #FF6F91; color: white;">
+          <img src="img-logo/logov2.png" alt="Logo" style="height: 50px; margin-right: 10px;">
+          <h5 class="modal-title fw-bold" id="sobreNosotrosLabel">Sobre Nosotros</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Cuerpo -->
+        <div class="modal-body" style="font-family: Poppins; font-size: 16px; line-height: 1.6;">
+          <p class="text-center">En <strong>Florería Rosmery</strong> creemos que las flores tienen el poder de
+            transformar momentos y transmitir sentimientos que a veces las palabras no alcanzan.</p>
+          <p class="text-center">Nacimos con la ilusión de llenar de color, aroma y vida cada detalle importante en la
+            vida de nuestros clientes. Desde un pequeño ramo para alegrar el día, hasta la decoración completa de un
+            evento especial, ponemos dedicación y cariño en cada creación.</p>
+          <p class="text-center">Trabajamos únicamente con flores frescas y seleccionadas, combinando creatividad,
+            calidad y amor por lo que hacemos. Para nosotros, cada arreglo es único, porque cada persona y cada ocasión
+            también lo son.</p>
+          <p class="fw-bold text-center">En Florería Rosmery no solo vendemos flores,<br> creamos recuerdos
+            inolvidables. 💐</p>
+        </div>
+
+        <!-- Pie -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger fw-bold" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL CONTACTO -->
+  <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content" style="border-radius: 12px;">
+        <!-- Header: título centrado, sin logo -->
+        <div class="modal-header"
+          style="background-color: #FF6F91; color: white; position: relative; justify-content: center;">
+          <h5 class="modal-title" id="contactoModalLabel" style="margin: 0; font-weight: 700;">Contáctate con Nosotros
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"
+            style="position: absolute; right: 12px; top: 12px;"></button>
+        </div>
+
+        <!-- Body: Formulario -->
+        <div class="modal-body">
+          <form id="contactForm" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cNombre" class="form-label fw-bold">Nombres</label>
+                <input type="text" class="form-control" id="cNombre" placeholder="Tu nombre" required>
+                <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label for="cApellido" class="form-label fw-bold">Apellidos</label>
+                <input type="text" class="form-control" id="cApellido" placeholder="Tus apellidos" required>
+                <div class="invalid-feedback">Por favor ingresa tus apellidos.</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cEmail" class="form-label fw-bold">Correo electrónico</label>
+                <input type="email" class="form-control" id="cEmail" placeholder="ejemplo@dominio.com" required>
+                <div class="invalid-feedback">Ingresa un correo válido.</div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label for="cTelefono" class="form-label fw-bold">Teléfono</label>
+                <input type="tel" class="form-control" id="cTelefono" placeholder="Ejem: 51+ 924 620 141" required>
+                <div class="invalid-feedback">Ingresa tu teléfono.</div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="cAsunto" class="form-label fw-bold">Asunto</label>
+              <select id="cAsunto" class="form-select" aria-label="Asunto">
+                <option selected>Selecciona...</option>
+                <option value="pedido">Pedido / Cotización</option>
+                <option value="evento">Decoración para evento</option>
+                <option value="reclamo">Reclamo / Consulta</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="cMensaje" class="form-label fw-bold">Mensaje</label>
+              <textarea class="form-control" id="cMensaje" rows="4" placeholder="Escribe tu mensaje"
+                required></textarea>
+              <div class="invalid-feedback">El mensaje no puede quedar vacío.</div>
+            </div>
+
+            <input type="hidden" id="origen" value="web_homepage">
+          </form>
+        </div>
+
+
+        <!-- Footer: botones -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary fw-bold" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" id="btnEnviarContacto" class="btn btn-danger fw-bold">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--footer-->
+  <footer class="text-black py-4" style="background-color: #FF6F91;">
+    <div class="container text-center">
+      <p class="mb-0" style="font-weight: 500;">&copy; FLORERIA ROSMERY 2025 | TODOS LOS DERECHOS RESERVADOS</p>
+    </div>
+  </footer>
+
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
